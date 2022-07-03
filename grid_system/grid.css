@@ -1,0 +1,396 @@
+/* Mobile */
+.grid{
+    /* Nếu sử dụng display: block thì không cần sử dụng width: 100%. Ở đây để cho chuẩn!
+        Phòng trường hợp không có display: block thì nó vẫn hoạt động đúng. */
+    width: 100%; 
+    display: block;
+    padding: 0;
+}
+
+.grid.wide{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row{
+    /* Dùng display: flex; vì để giúp các columns nằm theo chiều ngang */
+    /* Dùng display: block; hình khối bao bọc nằm trên từng row tỷ lệ (100%) với chiều ngang màn hình*/
+    /* Dùng display: inline; không phải hình khối bao bọc và nằm trên từng dòng tỷ lệ (100%) với chiều ngang màn hình */
+    /* Dùng display: inline-block; hình khối bao bọc và nằm trên từng row và chỉ bao bọc nội dung không tỷ lệ với chiều ngang màn hình */
+    display: flex; 
+
+    /* Mặc định của flex-wrap: nowrap; là không xuống dòng. */
+    /* Ở dưới ta sử dụng cho trường hợp chiều ngang column vượt quá kích thước row nó sẽ tự xuống hàng */
+    flex-wrap: wrap;
+    
+    /* Loại bỏ khoảng thừa gutter ở hai phía */
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.col {
+    /* Tương đương sẽ tạo gutter giữa 2 column là 8px */
+    padding-left: 4px; 
+    padding-right: 4px;
+}
+
+/* c- dùng cho mobile! */
+.c-0{
+    /* c-0 ẩn đi một cái cột khi hiển thị trên mobile */
+    display: none;
+}
+
+/* c-1 -> c-12 tương ứng với kích thước các cột của web */
+/* c-1 là chiếm 1 cột cơ sở; c-2 là chiếm 2 cột cơ sở;...; c-12 là chiếm 12 cột cơ sở */
+
+/* flex: flex-grow flex-shrink flex-basis */
+
+/* Thuộc tính flex-grow cho phép các phần tử giãn theo độ rộng của container.
+Giá trị mặc định của thuộc tính flex-grow là 0, các item sẽ không tự động co giãn kích thước, để lại nhiều khoảng trống trong container.
+Khi ta tăng flex-grow = 1, item sẽ tự động giãn ra đều nhau sao cho vừa với khung container.*/
+
+/* Thuộc tính flex-shrink ngược lại với thuộc tính flex-grow ở trên, 
+nó không giãn ra mà lại co lại khi chúng ta thay đổi độ rộng của container. Default: 1 */
+
+/* Thuộc tính flex-basis sử dụng để xác định độ dài ban đầu của một item. */
+.c-1{
+    /* Trong t/h thẻ cha chứa c-1 là row thì nó sẽ set kích thức chiều ngang*/
+    /* Trong t/h thẻ cha chứa c-1 (column) là column thì nó sẽ set kích thức chiều dọc*/
+    /* CT: calc(100% / 12)*(c-1) */
+    flex: 0 0 8.33333%;
+    /* max-width: 8.33333%; chiều ngang tối đa */
+    max-width: 8.33333%;
+}
+
+.c-2{
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+
+.c-3{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.c-4{
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.c-5{
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+}
+
+.c-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.c-7{
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+}
+
+.c-8{
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+
+.c-9{
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.c-10{
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+}
+
+.c-11{
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+}
+
+.c-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+/* Table - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wide{
+        width: 644px;
+    }
+}
+
+/* > Tablet */
+@media (min-width: 740px){
+    .row{
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .col {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    /* Nếu không muốn nhìn thấy layout nào sd m-0 */
+    .m-0{ 
+        display: none;
+    }
+    /* Sd cho những thẻ khác div vd: span có thuộc tính như thẻ div */
+    .m-1,
+    .m-2,
+    .m-3,
+    .m-4,
+    .m-5,
+    .m-6,
+    .m-7,
+    .m-8,
+    .m-9,
+    .m-10,
+    .m-11,
+    .m-12{
+        display: block;
+    }
+    .m-1{
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    
+    .m-2{
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    
+    .m-3{
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    
+    .m-4{
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    
+    .m-5{
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    
+    .m-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .m-7{
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    
+    .m-8{
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    
+    .m-9{
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    
+    .m-10{
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    
+    .m-11{
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+    
+    .m-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* PC low resolution > */
+@media (min-width: 1113px){
+    .row{
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    .col {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .l-0{ 
+        display: none;
+    }
+    .l-1,
+    .l-2,
+    .l-3,
+    .l-4,
+    .l-5,
+    .l-6,
+    .l-7,
+    .l-8,
+    .l-9,
+    .l-10,
+    .l-11,
+    .l-12{
+        display: block;
+    }
+    .l-1{
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    
+    .l-2{
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    
+    .l-3{
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    
+    .l-4{
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    
+    .l-5{
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    
+    .l-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .l-7{
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    
+    .l-8{
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    
+    .l-9{
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    
+    .l-10{
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    
+    .l-11{
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+    
+    .l-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .wide{
+        width: 984px;
+    }
+    .wide .row{
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    .wide .col {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    /* CSS riêng cho device sd wide */
+    .wide .l-0{ 
+        display: none;
+    }
+    .wide .l-1,
+    .wide .l-2,
+    .wide .l-3,
+    .wide .l-4,
+    .wide .l-5,
+    .wide .l-6,
+    .wide .l-7,
+    .wide .l-8,
+    .wide .l-9,
+    .wide .l-10,
+    .wide .l-11,
+    .wide .l-12{
+        display: block;
+    }
+    .wide .l-1{
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    
+    .wide .l-2{
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    
+    .wide .l-3{
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    
+    .wide .l-4{
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    
+    .wide .l-5{
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    
+    .wide .l-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .wide .l-7{
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    
+    .wide .l-8{
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    
+    .wide .l-9{
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    
+    .wide .l-10{
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    
+    .wide .l-11{
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+    
+    .wide .l-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

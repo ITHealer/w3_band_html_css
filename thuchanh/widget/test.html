@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/fonts/themify-icons/themify-icons.css">
+    <style>
+.modalcar{
+    position: fixed;
+    background: rgba(0,0,0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    animation: modalFaceIn ease 0.5s;
+    position: relative;
+    background: #34b673;
+    width: 168px;
+    border-radius: 12px;
+}
+
+.modalcar.open{
+    display: flex;
+}
+
+.icon-car{
+    width: 20px;
+    height: 20px;
+    padding: 12px;;
+}
+
+@keyframes modalFaceIn{
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="modalcar"> 
+        <div class="modalcar-close">
+            <div class="icon-modalcar">
+                <img class="icon-car" src="/thuchanh/styles/jmg/icon-car.svg" alt="icon">
+            </div> 
+            <!-- PHP -->
+            
+        </div>    
+    </div>
+
+    <div class="barchart__hour" style="background: #34b673; width: 20px;">
+        ok
+    </div>
+</body>
+<script>
+    const buyBtnsCar = document.querySelectorAll('.barchart__hour')  
+    const modalCar = document.querySelector('.modalcar')
+    const modalCloseCar = document.querySelector('.modalcar-close')
+
+    function showCar(){
+        modalCar.classList.add('open');
+    }
+
+    function hideCar(){
+        modalCar.classList.remove('open');
+    }
+
+    for(const buyBtnCar of buyBtnsCar){
+        buyBtnCar.addEventListener('click', showCar)
+    }
+
+    modalCloseCar.addEventListener('click', hideCar)
+    
+</script>
+
+</html>

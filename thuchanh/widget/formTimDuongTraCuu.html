@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/thuchanh/styles/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/thuchanh/styles/css/grid.css">
+    <link rel="stylesheet" href="/thuchanh/styles/css/style.css">
+</head>
+<body>
+
+    <div id="top">
+        <!-- Begin top -->
+        <div id="logo" class="logo-top">
+            <a href="#">
+                <img src="/thuchanh/styles/jmg/logo_BusMap.jpg" alt="Logo" class="edit-logo">
+            </a>
+        </div>
+        <ul id="top-nav">
+            <li><a href="">Tra cứu</a></li>
+            <li><a href="">Tìm đường</a></li>
+            <li><a href="">Thông tin tuyến</a></li>
+            <li><a href="">Người dùng</a></li>
+            <li><a href="">Thoát</a></li>
+            <!-- Begin: Search button -->
+            <li class="search-btn ">
+                <input type="search" id="search" placeholder="Search..." />
+                <button class="icon"><i class="fa fa-search"></i></button>
+            </li>
+
+            <div id="mobile-icon" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+            <!-- End: Search button -->
+        </ul>
+    </div>
+        <!-- End top -->
+<div class="tab-map">
+    <div class="tab">
+        <div class="tabs">
+            <div class="tab-item">
+              <i class="tab-icon ti-search"></i>
+              Tra Cứu
+            </div>
+            <div class="tab-item active">
+              <i class="tab-icon ti-map-alt"></i>
+              Tìm Đường
+            </div>
+    
+            <!-- line là cái gạch chạy phía dưới title -->
+            <div class="line"></div>
+        </div>
+          <!-- Content -->
+        <div class="tab-content">
+            <div class="tab-pane">
+                <form action="#" name="fdk" method="POST">
+                    <input class="tra_input" type="text" name="tuyen" size="30" placeholder="Tìm tuyến xe">
+                    <input type= "submit" name= "btnTim" value= "Tìm">
+                </form>
+                <!--  -->
+                <div class="items">
+                    <div class="icon-container">
+                        <img class="icon-car" src="/thuchanh/styles/jmg/icon-car.svg" alt="icon">
+                    </div> 
+                    <div class="items-info">
+                        <span class="name-title">Tuyến số</span>
+                        <!-- Load tên tuyến -->
+                        <div class="icon-ex ti-alarm-clock"></div>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+            <div class="tab-pane active">
+                <div class="controls-container">
+                    <form action="#" method="POST">
+                        <div class="origin-search">
+                            <div class="icon_container">
+                                <img class="icon-origin" src="/thuchanh/styles/jmg/icondiadiemdi.svg" alt="Location">
+                                <input type="text" placeholder="Chọn địa điểm xuất phát">
+                            </div>
+                        </div>
+                        <div class="origin-search">
+                            <div class="icon_container">
+                                <img class="icon-distination" src="/thuchanh/styles/jmg/icondiadiemden.svg" alt="Location">
+                                <input type="text" placeholder="Chọn địa điểm kết thúc">
+                            </div>
+                        </div>
+                        <div class="swap">
+                            <img class="icon_swap" src="/thuchanh/styles/jmg/swap.svg" alt="Swap">
+                        </div>
+                        <div class="decorations-container"></div>
+                    </form>
+                    <div class="label-route">
+                        Số tuyến đi tối đa
+                    </div>
+                    <!-- Tab -->
+                    <div class="tabs">
+                        <div class="tabway-item active">1 Tuyến</div>
+                        <div class="tabway-item">2 Tuyến</div>
+                        <!-- line là cái gạch chạy phía dưới title -->
+                        <div class="line"></div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-paneway active">
+                            Tab1
+                            
+                            <div class="find-the-way">
+                                <div class="title-container">
+                                    <span class="title-text">
+                                        Đi tuyến 
+                                        <!-- Load mã tuyến -->
+                                    </span>
+                                    <div class="time">
+                                        ?
+                                        <!-- Load thời gian chỗ này -->
+                                        <span>phút</span>
+                                    </div>
+                                </div>
+                                <div class="route-infomation">
+                                    <div class="walk-distance">
+                                        <img src="/thuchanh/styles/jmg/person.svg" alt="Person" class="icon-walk">
+                                        <div class="texture">? km
+                                            <!-- Load khoảng cách -->
+                                        </div>
+                                    </div>
+                                    <div class="arrow-container">
+                                        <img src="/thuchanh/styles/jmg/arrow_right.svg" alt="arrow_right" class="icon-arrow">
+                                    </div>
+                                    <div class="bus-distance">
+                                        <img src="/thuchanh/styles/jmg/bus-solid.svg" alt="Icon-Bus" class="icon-bus">
+                                        <div class="texture">? km
+                                            <!-- Load khoảng cách -->
+                                        </div>
+                                    </div>
+                                    <div class="price-bus">
+                                        6 000k
+                                        <!-- Load giá -->
+                                    </div>
+                                </div>
+                                <div class="message-container">
+                                    <span class="text-bold">
+                                        <img src="/thuchanh/styles/jmg/wifi-signal.svg" alt="Wifi" class="wifi-sign">
+                                        Xe tới trong ? phút
+                                        <!-- Load phút -->
+                                        <span>tại trạm </span>
+                                        <!-- Load tên trạm -->
+                                        ABC
+                                    </span>
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
+                        <div class="tab-paneway">
+                            Tab2
+                        </div>
+                    </div>
+                    <!-- End tab -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="google-map">
+        <div class="map">
+            <div class="vidu">Map</div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // Để biến $ thay thế phải gõ lại chuỗi document.querySelector.bind(document);
+    const $ = document.querySelector.bind(document);
+    const $$ = document.querySelectorAll.bind(document);
+
+    // Lấy ra những tg có class=
+    const tabs = $$(".tab-item");
+    const panes = $$(".tab-pane");
+
+    const tabsWay = $$(".tabway-item");
+    const panesWay = $$(".tab-paneway");
+
+    // Lấy kích thước của từng tab tiêu đề khi ta click. TH viết ở đây để chạy mặc đinh tab đầu
+    const tabActive = $(".tab-item.active");
+    const line = $(".tabs .line");
+
+    line.style.left = tabActive.offsetLeft + "px";
+    // offsetWidth kích thước chiều ngang của line. Set nó vào thuộc tính left vs width của line
+    line.style.width = tabActive.offsetWidth + "px";
+
+    tabs.forEach((tab, index) => {
+        // khi click vào tab thì có thể lấy được content tương ứng
+        const pane = panes[index];
+
+        // tab.onclick để lắng nghe sự kiện trên các tab
+        tab.onclick = function () {
+        
+        // Tìm những thằng đã active thì xóa;
+        $(".tab-item.active").classList.remove("active");
+        $(".tab-pane.active").classList.remove("active");
+
+        line.style.left = this.offsetLeft + "px";
+        line.style.width = this.offsetWidth + "px";
+
+        this.classList.add("active");
+        pane.classList.add("active");
+        };
+    });
+
+    tabsWay.forEach((tab, index) => {
+        // khi click vào tab thì có thể lấy được content tương ứng
+        const paneWay = panesWay[index];
+
+        // tab.onclick để lắng nghe sự kiện trên các tab
+        tab.onclick = function () {
+        
+        // Tìm những thằng đã active thì xóa;
+        $(".tabway-item.active").classList.remove("active");
+        $(".tab-paneway.active").classList.remove("active");
+
+        this.classList.add("active");
+        paneWay.classList.add("active");
+        };
+    });
+
+</script>
+</body>
+</html>
+
+
+   
+<script>
+    const $sub = document.querySelector.bind(document);
+    const $$sub = document.querySelectorAll.bind(document);
+    const tabsSub = $$sub(".tabsub__item");
+    const panesSub = $$sub(".tabsub-pane");
+
+    const tabSubActive = $sub(".tabsub__item.active");
+    const lineSub = $sub(".tabsub .line");
+
+    line.style.left = tabSubActive.offsetLeft + "px";
+    // offsetWidth kích thước chiều ngang của line. Set nó vào thuộc tính left vs width của line
+    line.style.width = tabSubActive.offsetWidth + "px";
+
+    tabsSub.forEach((tabSub, index) => {
+        // khi click vào tab thì có thể lấy được content tương ứng
+        const paneSub = panesSub[index];
+
+        // tab.onclick để lắng nghe sự kiện trên các tab
+        tabSub.onclick = function () {
+        
+        // Tìm những thằng đã active thì xóa;
+        $(".tabsub__item.active").classList.remove("active");
+        $(".tabsub-pane.active").classList.remove("active");
+
+        line.style.left = this.offsetLeft + "px";
+        line.style.width = this.offsetWidth + "px";
+
+        this.classList.add("active");
+        paneSub.classList.add("active");
+        };
+    });
+</script>

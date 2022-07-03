@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/thuchanh/styles/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/thuchanh/styles/css/grid.css">
+    <link rel="stylesheet" href="/thuchanh/styles/css/style.css">
+</head>
+<body>
+
+    <div id="top">
+        <!-- Begin top -->
+        <div id="logo" class="logo-top">
+            <a href="#">
+                <img src="/thuchanh/styles/jmg/logo_BusMap.jpg" alt="Logo" class="edit-logo">
+            </a>
+        </div>
+        <ul id="top-nav">
+            <li><a href="">Tra cứu</a></li>
+            <li><a href="">Tìm đường</a></li>
+            <li><a href="">Thông tin tuyến</a></li>
+            <li><a href="">Người dùng</a></li>
+            <li><a href="">Thoát</a></li>
+            <!-- Begin: Search button -->
+            <li class="search-btn ">
+                <input type="search" id="search" placeholder="Search..." />
+                <button class="icon"><i class="fa fa-search"></i></button>
+            </li>
+
+            <div id="mobile-icon" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+            <!-- End: Search button -->
+        </ul>
+    </div>
+        <!-- End top -->
+<div class="tab-map">
+    <div class="tab">
+        <div class="tab-heading">
+            <div class="back">
+                <i class="back__icon ti-arrow-left"></i>
+            </div>
+            <div class="route">
+                <span class="route__text">Tuyến </span>
+                <!-- Load mã tuyến -->
+            </div>
+        </div>
+        <div class="tabs">
+            <div class="tabs-item tab-item active">
+                Xem lượt đi
+            </div>
+            <div class="tabs-item tab-item">
+                Xem lượt về
+            </div>
+            <!-- line là cái gạch chạy phía dưới title -->
+            <div style="background-color: #00897b;" class="line"></div>
+        </div>
+            <!-- Content -->
+        <div class="tab-content">
+            <div class="tab-pane active">
+                <div class="tabsub-map">
+                    <div class="tabsub">
+                        <div class="tabsub-heading">
+                            <div class="tabsub-item">
+                                Biểu đồ giờ
+                            </div>
+                            <div class="tabsub-item active">
+                                Trạm dừng
+                            </div>
+                            <div class="tabsub-item">
+                                Thông tin
+                            </div>
+                            <div class="tabsub-item">
+                                Đánh giá
+                            </div>
+                        </div>
+                          <!-- Content tabsub-->
+                        <div class="tabsub-content">
+                            <div class="tabsub-pane">
+                                Tab1
+                            </div>
+                            <div class="tabsub-pane active">
+                                Tab2
+                            </div>
+                            <div class="tabsub-pane">
+                                Tab3
+                            </div>
+                            <div class="tabsub-pane">
+                                <div class="rating__info">
+                                    <div class="info__title">
+                                        Tổng hợp đánh giá
+                                    </div>
+                                    <div class="info__content">
+                                        <div class="rating__avarage">
+                                            3.02
+                                        </br>
+                                            <div class="star__haft ti-star"></div>
+                                            <div class="star__haft ti-star"></div>
+                                            <div class="star__haft ti-star"></div>
+                                            <div class="star__haft-black ti-star"></div>
+                                            <div class="star__haft-black ti-star"></div>
+                                        </br>
+                                            <div class="rating__user">
+                                                <i class="ti-user"></i>
+                                                <span>105</span>
+                                            </div>
+                                        </div>
+                                        <div class="barchart">
+                                            <img src="/thuchanh/styles/jmg/Bar_Chart.jpg" width="200px" alt="Biểu đồ rating">
+                                        </div>
+                                    </div>
+                                    <div class="rating__review">
+                                        <div class="review_title">Các bài đánh giá</div>
+                                        <div class="container__user">
+                                            <div class="review__container">
+                                                <img src="/thuchanh/styles/jmg/UMH2.jpg" alt="Avartar" class="review__avatar">
+                                                <div class="review__info">
+                                                    <div class="review__name">Healer</div>
+                                                    <div class="review__time">Cách đây 1 giờ</div>
+                                                </div>
+                                                <div class="review__star">
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft-black ti-star"></div>
+                                                </div>
+                                            </div>
+                                            <p class="review__text">
+                                                App rất hữu ích!
+                                            </p>
+                                        </div>
+                                        <div class="container__user">
+                                            <div class="review__container">
+                                                <img src="/thuchanh/styles/jmg/TBT.jpg" alt="Avartar" class="review__avatar">
+                                                <div class="review__info">
+                                                    <div class="review__name">Tường</div>
+                                                    <div class="review__time">Cách đây 2 giờ</div>
+                                                </div>
+                                                <div class="review__star">
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                </div>
+                                            </div>
+                                            <p class="review__text">
+                                                Tuyệt vời. Xe chạy rất êm và an toàn!
+                                            </p>
+                                        </div>
+                                        <div class="container__user">
+                                            <div class="review__container">
+                                                <img src="/thuchanh/styles/jmg/NTTL.jpg" alt="Avartar" class="review__avatar">
+                                                <div class="review__info">
+                                                    <div class="review__name">Liễu</div>
+                                                    <div class="review__time">Cách đây 1 giờ</div>
+                                                </div>
+                                                <div class="review__star">
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft-black ti-star"></div>
+                                                </div>
+                                            </div>
+                                            <p class="review__text">
+                                                Xe đi mát vãi!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End: tabsub -->
+            </div>
+            <div class="tab-pane">
+                <div class="tabsub-map">
+                    <div class="tabsub">
+                        <div class="tabsub-heading">
+                            <div class="tabsub-item">
+                                Biểu đồ giờ
+                            </div>
+                            <div class="tabsub-item active">
+                                Trạm dừng
+                            </div>
+                            <div class="tabsub-item">
+                                Thông tin
+                            </div>
+                            <div class="tabsub-item">
+                                Đánh giá
+                            </div>
+                        </div>
+                          <!-- Content tabsub-->
+                        <div class="tabsub-content">
+                            <div class="tabsub-pane">
+                                Tab1
+                            </div>
+                            <div class="tabsub-pane active">
+                                Tab2
+                            </div>
+                            <div class="tabsub-pane">
+                                Tab3
+                            </div>
+                            <div class="tabsub-pane">
+                                <div class="rating__info">
+                                    <div class="info__title">
+                                        Tổng hợp đánh giá
+                                    </div>
+                                    <div class="info__content">
+                                        <div class="rating__avarage">
+                                            3.02
+                                        </br>
+                                            <div class="star__haft ti-star"></div>
+                                            <div class="star__haft ti-star"></div>
+                                            <div class="star__haft ti-star"></div>
+                                            <div class="star__haft-black ti-star"></div>
+                                            <div class="star__haft-black ti-star"></div>
+                                        </br>
+                                            <div class="rating__user">
+                                                <i class="ti-user"></i>
+                                                <span>105</span>
+                                            </div>
+                                        </div>
+                                        <div class="barchart">
+                                            <img src="/thuchanh/styles/jmg/Bar_Chart.jpg" width="200px" alt="Biểu đồ rating">
+                                        </div>
+                                    </div>
+                                    <div class="rating__review">
+                                        <div class="review_title">Các bài đánh giá</div>
+                                        <div class="container__user">
+                                            <div class="review__container">
+                                                <img src="/thuchanh/styles/jmg/UMH2.jpg" alt="Avartar" class="review__avatar">
+                                                <div class="review__info">
+                                                    <div class="review__name">Healer</div>
+                                                    <div class="review__time">Cách đây 1 giờ</div>
+                                                </div>
+                                                <div class="review__star">
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft-black ti-star"></div>
+                                                </div>
+                                            </div>
+                                            <p class="review__text">
+                                                App rất hữu ích!
+                                            </p>
+                                        </div>
+                                        <div class="container__user">
+                                            <div class="review__container">
+                                                <img src="/thuchanh/styles/jmg/TBT.jpg" alt="Avartar" class="review__avatar">
+                                                <div class="review__info">
+                                                    <div class="review__name">Tường</div>
+                                                    <div class="review__time">Cách đây 2 giờ</div>
+                                                </div>
+                                                <div class="review__star">
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                </div>
+                                            </div>
+                                            <p class="review__text">
+                                                Tuyệt vời. Xe chạy rất êm và an toàn!
+                                            </p>
+                                        </div>
+                                        <div class="container__user">
+                                            <div class="review__container">
+                                                <img src="/thuchanh/styles/jmg/NTTL.jpg" alt="Avartar" class="review__avatar">
+                                                <div class="review__info">
+                                                    <div class="review__name">Liễu</div>
+                                                    <div class="review__time">Cách đây 1 giờ</div>
+                                                </div>
+                                                <div class="review__star">
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft ti-star"></div>
+                                                    <div class="star__haft-black ti-star"></div>
+                                                </div>
+                                            </div>
+                                            <p class="review__text">
+                                                Xe đi mát vãi!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End: tabsub -->
+            </div>
+        </div>
+    </div>
+    <div class="google-map">
+        <div class="map">
+            <div class="vidu">Map</div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // Để biến $ thay thế phải gõ lại chuỗi document.querySelector.bind(document);
+    const $ = document.querySelector.bind(document);
+    const $$ = document.querySelectorAll.bind(document);
+
+    // Lấy ra những tg có class=
+    const tabs = $$(".tab-item");
+    const panes = $$(".tab-pane");
+
+    const tabsSub = $$(".tabsub-item");
+    const panesSub = $$(".tabsub-pane");
+
+    // Lấy kích thước của từng tab tiêu đề khi ta click. TH viết ở đây để chạy mặc đinh tab đầu
+    const tabActive = $(".tab-item.active");
+    const line = $(".tabs .line");
+
+    line.style.left = tabActive.offsetLeft + "px";
+    // offsetWidth kích thước chiều ngang của line. Set nó vào thuộc tính left vs width của line
+    line.style.width = tabActive.offsetWidth + "px";
+
+    tabs.forEach((tab, index) => {
+        // khi click vào tab thì có thể lấy được content tương ứng
+        const pane = panes[index];
+
+        // tab.onclick để lắng nghe sự kiện trên các tab
+        tab.onclick = function () {
+        
+        // Tìm những thằng đã active thì xóa;
+        $(".tab-item.active").classList.remove("active");
+        $(".tab-pane.active").classList.remove("active");
+
+        line.style.left = this.offsetLeft + "px";
+        line.style.width = this.offsetWidth + "px";
+
+        this.classList.add("active");
+        pane.classList.add("active");
+        };
+    });
+
+    tabsSub.forEach((tab, index) => {
+        // khi click vào tab thì có thể lấy được content tương ứng
+        const paneSub = panesSub[index];
+
+        // tab.onclick để lắng nghe sự kiện trên các tab
+        tab.onclick = function () {
+        
+        // Tìm những thằng đã active thì xóa;
+        $(".tabsub-item.active").classList.remove("active");
+        $(".tabsub-pane.active").classList.remove("active");
+
+        this.classList.add("active");
+        paneSub.classList.add("active");
+        };
+    });
+
+</script>
+</body>
+</html>
+        

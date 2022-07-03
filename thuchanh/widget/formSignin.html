@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/thuchanh/styles/css/stylelogin.css">
+    <link rel="stylesheet" href="/thuchanh/styles/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/thuchanh/styles/css/grid.css">
+    <link rel="stylesheet" href="/thuchanh/styles/css/style.css">
+</head>
+<body>
+    <div id="top">
+
+        <!-- Begin top -->
+        <div id="logo" class="logo-top">
+            <a href="#">
+                <img src="/thuchanh/styles/jmg/logo_BusMap.jpg" alt="Logo" class="edit-logo">
+            </a>
+        </div>
+        <ul id="top-nav">
+            <li><a href="">Giới thiệu</a></li>
+            <li><a href="">Đăng ký</a></li>
+            <li><a href="">Đăng nhập</a></li>
+            <li>
+                <a href="">
+                    Khác
+                    <i class="nav-arrow-down ti-angle-down"></i>
+                </a>
+                <ul class="top-nav-sub">
+                    <li><a href="">Tính năng</a></li>
+                    <li><a href="">Hướng dẫn</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+            </li>
+            
+            <!-- Begin: Search button -->
+            <li class="search-btn ">
+                <input type="search" id="search" placeholder="Search..." />
+                <button class="icon"><i class="fa fa-search"></i></button>
+            </li>
+            <!-- End: Search button -->
+
+        </ul>
+        <!-- End top -->
+    </div>
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="box">
+            <div class="square" style="--i:0;"></div>
+            <div class="square" style="--i:1;"></div>
+            <div class="square" style="--i:2;"></div>
+            <div class="square" style="--i:3;"></div>
+            <div class="square" style="--i:4;"></div>
+            <div class="container">
+                <div class="form">
+                    <h2>Đăng ký</h2>
+                    <form action="">
+                        <div class="inputBox_sign">
+                            <input type="text" placeholder="Tên đăng nhập">
+                        </div>
+                        <div class="inputBox_sign">
+                            <input type="password" placeholder="Mật khẩu">
+                        </div>
+                        <div class="inputBox_sign">
+                            <input type="password" placeholder="Nhập lại mật khẩu">
+                        </div>
+                        <div class="inputBox_sign">
+                            <input type="text" placeholder="Họ tên khách hàng">
+                        </div>
+                        <div class="inputBox_sign">
+                            <input type="date" name="NS" min="1900-01-01" max="2021-12-31" required />
+                        </div>
+                        <div class="inputBox_sign checkbox">
+                            <input id="cb" type="checkbox" value="Nam" name="gender">Nam</input> 
+					        <input id="cb" type="checkbox" value="Nữ" name="gender">Nữ</input> 
+					        <input id="cb" type="checkbox" value="Khác" name="gender">Khác</input>
+                        </div>
+                        <div class="inputBox_sign">
+                            <input type="text" name="mail" placeholder="Email" pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" required /> 
+                        </div>
+                        <div class="inputBox_sign">
+                            <input type="submit" value="Đăng ký">
+                        </div>
+                        <p class="forget">Đã có tài khoản ? <a href="formLogin.php">Đăng nhập</a> </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

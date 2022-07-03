@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/thuchanh/styles/css/styleadmin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="bus-outline"></ion-icon></span>
+                        <span class="title main-title">BusMap</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Thống kê</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="pulse-outline"></ion-icon></span>
+                        <span class="title">Quản lý tuyến</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="trail-sign-outline"></ion-icon></span>
+                        <span class="title">Quản lý trạm</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="subway-outline"></ion-icon></span>
+                        <span class="title">Quản lý xe</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="ticket-outline"></ion-icon></span>
+                        <span class="title">Quản lý vé</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Người dùng</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                        <span class="title">Phản hồi</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Đăng xuất</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!-- search -->
+                <div class="search">
+                    <label for="">
+                        <input type="text" name="" id="" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <!-- userImage -->
+                <div class="user">
+                    <img src="/thuchanh/styles/jmg/message.png" alt="ImageUser">
+                </div>
+            </div>
+
+            <!-- cards -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,504</div>
+                        <div class="cardName">Lượt truy cập</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Vé bán</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">284</div>
+                        <div class="cardName">Bình luận</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">$7,842</div>
+                        <div class="cardName">Doanh thu</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- order data list -->
+            <div class="details-route">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Tuyến</h2>
+                        <div class="search_sub">
+                            <label for="">
+                                <input type="text" name="" id="" placeholder="Tìm kiếm...">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </label>
+                        </div>
+                        <div class="modal_add">
+                            <button class="btn btn_input modal_add">Thêm</button>
+                        </div>
+                        <div class="modal_del">
+                            <input type="submit" name="del" value="Xóa" class="btn btn_input" />
+                        </div>
+                        <div class="modal_update">
+                            <input type="submit" name="update" value="Sửa" class="btn btn_input" />
+                        </div>
+                        <a href="#" class="btn">Xem tất cả</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Mã tuyến</td>
+                                <td>Tên tuyến</td>
+                                <td>Giờ khởi hành</td>
+                                <td>Giờ kết thúc</td>
+                                <td>Mã trạm bắt đầu</td>
+                                <td>Mã trạm kết thúc</td>
+                                <td>Tần suất</td>
+                                <td>Lộ trình</td>
+                                <td>Số xe</td>
+                                <td>Trạng thái</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tuyến số 1</td>
+                                <td>Trần Qúy Cáp - Suối mơ</td>
+                                <td>05:40</td>
+                                <td>18:30</td>
+                                <td>L1</td>
+                                <td>L38</td>
+                                <td>30</td>
+                                <td>Trần Qúy Cáp, Tuy Phước, An Nhơn, Quy Nhơn</td>
+                                <td>6</td>
+                                <td><span class="status delivered">Run</span></td>
+                            </tr>
+                            <tr>
+                                <td>Tuyến số 1</td>
+                                <td>Trần Qúy Cáp - Suối mơ</td>
+                                <td>05:40</td>
+                                <td>18:30</td>
+                                <td>L1</td>
+                                <td>L38</td>
+                                <td>30</td>
+                                <td>Trần Qúy Cáp, Tuy Phước, An Nhơn, Quy Nhơn</td>
+                                <td>6</td>
+                                <td><span class="status delivered">Run</span></td>
+                            </tr>
+                            <tr>
+                                <td>Tuyến số 1</td>
+                                <td>Trần Qúy Cáp - Suối mơ</td>
+                                <td>05:40</td>
+                                <td>18:30</td>
+                                <td>L1</td>
+                                <td>L38</td>
+                                <td>30</td>
+                                <td>Trần Qúy Cáp, Tuy Phước, An Nhơn, Quy Nhơn</td>
+                                <td>6</td>
+                                <td><span class="status delivered">Run</span></td>
+                            </tr>
+                            <tr>
+                                <td>Tuyến số 1</td>
+                                <td>Trần Qúy Cáp - Suối mơ</td>
+                                <td>05:40</td>
+                                <td>18:30</td>
+                                <td>L1</td>
+                                <td>L38</td>
+                                <td>30</td>
+                                <td>Trần Qúy Cáp, Tuy Phước, An Nhơn, Quy Nhơn</td>
+                                <td>6</td>
+                                <td><span class="status delivered">Run</span></td>
+                            </tr>
+                            <tr>
+                                <td>Tuyến số 1</td>
+                                <td>Trần Qúy Cáp - Suối mơ</td>
+                                <td>05:40</td>
+                                <td>18:30</td>
+                                <td>L1</td>
+                                <td>L38</td>
+                                <td>30</td>
+                                <td>Trần Qúy Cáp, Tuy Phước, An Nhơn, Quy Nhơn</td>
+                                <td>6</td>
+                                <td><span class="status delivered">Run</span></td>
+                            </tr>
+                            <tr>
+                                <td>Tuyến số 1</td>
+                                <td>Trần Qúy Cáp - Suối mơ</td>
+                                <td>05:40</td>
+                                <td>18:30</td>
+                                <td>L1</td>
+                                <td>L38</td>
+                                <td>30</td>
+                                <td>Trần Qúy Cáp, Tuy Phước, An Nhơn, Quy Nhơn</td>
+                                <td>6</td>
+                                <td><span class="status delivered">Run</span></td>
+                            </tr>
+                            <tr>
+                                <td>Tuyến số 1</td>
+                                <td>Trần Qúy Cáp - Suối mơ</td>
+                                <td>05:40</td>
+                                <td>18:30</td>
+                                <td>L1</td>
+                                <td>L38</td>
+                                <td>30</td>
+                                <td>Trần Qúy Cáp, Tuy Phước, An Nhơn, Quy Nhơn</td>
+                                <td>6</td>
+                                <td><span class="status delivered">Run</span></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ADD -->
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+
+            <header class="modal-header">
+                <span class="modal-heading-icon"><ion-icon name="pulse-outline"></ion-icon></span>
+                Thêm tuyến
+            </header>
+
+            <div class="modal-body edit_route">
+                <!-- <label for="crud_add_route_code" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Mã tuyến
+                </label> -->
+                <input id="crud_add_route_code" type="text" class="modal-input" placeholder="Nhập mã tuyến...">
+
+                <!-- <label for="crud_add_route_name" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Tên tuyến
+                </label> -->
+                <input id="crud_add_route_name" type="text" class="modal-input" placeholder="Nhập tên tuyến...">
+
+                <!-- <label for="crud_add_route_hourstart" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Giờ khởi hành
+                </label> -->
+                <input id="crud_add_route_hourstart" type="text" class="modal-input" placeholder="Nhập giờ khởi hành...">
+
+                <!-- <label for="crud_add_route_hourend" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Giờ kết thúc
+                </label> -->
+                <input id="crud_add_route_hourend" type="text" class="modal-input" placeholder="Nhập giờ kết thúc...">
+
+                <!-- <label for="crud_add_route_stationstart" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Mã trạm bắt đầu
+                </label> -->
+                <input id="crud_add_route_stationstart" type="text" class="modal-input" placeholder="Nhập mã trạm bắt đầu...">
+
+                <!-- <label for="crud_add_route_stationend" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Mã trạm kết thúc
+                </label> -->
+                <input id="crud_add_route_stationend" type="text" class="modal-input" placeholder="Nhập mã trạm kết thúc...">
+
+                <!-- <label for="crud_add_route_frequency" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Tần suất
+                </label> -->
+                <input id="crud_add_route_frequency" type="text" class="modal-input" placeholder="Nhập tần suất...">
+
+                <!-- <label for="crud_add_route_route" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Lộ trình
+                </label> -->
+                <input id="crud_add_route_route" type="text" class="modal-input" placeholder="Nhập lộ trình...">
+
+                <!-- <label for="crud_add_route_car" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Số lượng xe
+                </label> -->
+                <input id="crud_add_route_car" type="text" class="modal-input" placeholder="Nhập số lượng xe...">
+
+                <!-- <label for="crud_add_route_status" class="modal-label">
+                    <ion-icon name="clipboard-outline"></ion-icon>
+                    Trạng thái
+                </label> -->
+                <input id="crud_add_route_status" type="text" class="modal-input" placeholder="Nhập trạng thái...">
+
+                <button id="crud_add">
+                    Thêm <i class="ti-check"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal DEL -->
+    <div class="modalDel js-modal-del">
+        <div class="modal-container js-modal-del-container">
+            <div class="modal-close js-modal-del-close">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+
+            <header class="modal-header">
+                <span class="modal-heading-icon"><ion-icon name="pulse-outline"></ion-icon></span>
+                Xóa tuyến
+            </header>
+
+            <div class="modal-body">
+                <label for="crud_del_stationcode" class="modal-label">
+                    <ion-icon name="navigate-outline"></ion-icon>
+                    Mã tuyến
+                </label>
+                <input id="crud_del_stationcode" type="text" class="modal-input" placeholder="Nhập mã trạm...">
+
+                <!-- <label for="crud_del_stationname" class="modal-label">
+                    <ion-icon name="clipboard-outline"></ion-icon>
+                    Tên trạm
+                </label>
+                <input id="crud_del_stationname" type="text" class="modal-input" placeholder="Nhập tên trạm..."> -->
+
+                <button id="crud_del">
+                    Xóa <i class="ti-check"></i>
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="#">help?</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Modal UP -->
+    <div class="modalUp js-modal-up">
+        <div class="modal-container js-modal-up-container">
+            <div class="modal-close js-modal-up-close">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+
+            <header class="modal-header">
+                <span class="modal-heading-icon"><ion-icon name="pulse-outline"></ion-icon></span>
+                Sửa trạm
+            </header>
+
+            <div class="modal-body edit_route">
+                <!-- <label for="crud_add_route_code" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Mã tuyến
+                </label> -->
+                <input id="crud_add_route_code" type="text" class="modal-input" placeholder="Nhập mã tuyến...">
+
+                <!-- <label for="crud_add_route_name" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Tên tuyến
+                </label> -->
+                <input id="crud_add_route_name" type="text" class="modal-input" placeholder="Nhập tên tuyến...">
+
+                <!-- <label for="crud_add_route_hourstart" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Giờ khởi hành
+                </label> -->
+                <input id="crud_add_route_hourstart" type="text" class="modal-input" placeholder="Nhập giờ khởi hành...">
+
+                <!-- <label for="crud_add_route_hourend" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Giờ kết thúc
+                </label> -->
+                <input id="crud_add_route_hourend" type="text" class="modal-input" placeholder="Nhập giờ kết thúc...">
+
+                <!-- <label for="crud_add_route_stationstart" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Mã trạm bắt đầu
+                </label> -->
+                <input id="crud_add_route_stationstart" type="text" class="modal-input" placeholder="Nhập mã trạm bắt đầu...">
+
+                <!-- <label for="crud_add_route_stationend" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Mã trạm kết thúc
+                </label> -->
+                <input id="crud_add_route_stationend" type="text" class="modal-input" placeholder="Nhập mã trạm kết thúc...">
+
+                <!-- <label for="crud_add_route_frequency" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Tần suất
+                </label> -->
+                <input id="crud_add_route_frequency" type="text" class="modal-input" placeholder="Nhập tần suất...">
+
+                <!-- <label for="crud_add_route_route" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Lộ trình
+                </label> -->
+                <input id="crud_add_route_route" type="text" class="modal-input" placeholder="Nhập lộ trình...">
+
+                <!-- <label for="crud_add_route_car" class="modal-label">
+                    <ion-icon name="golf-outline"></ion-icon>
+                    Số lượng xe
+                </label> -->
+                <input id="crud_add_route_car" type="text" class="modal-input" placeholder="Nhập số lượng xe...">
+
+                <!-- <label for="crud_add_route_status" class="modal-label">
+                    <ion-icon name="clipboard-outline"></ion-icon>
+                    Trạng thái
+                </label> -->
+                <input id="crud_add_route_status" type="text" class="modal-input" placeholder="Nhập trạng thái...">
+
+                <button id="crud_up">
+                    Sửa <i class="ti-check"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        // MenuToggle; Khi click vào sẽ thu category lại;
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main')
+
+        toggle.onclick = function(){
+            navigation.classList.toggle('active'); 
+            main.classList.toggle('active');
+        }
+
+        let list = document.querySelectorAll('.navigation li');
+        function activeLink(){
+            list.forEach((item) =>
+                item.classList.remove('hovered'));
+                this.classList.add('hovered');
+        }
+
+        list.forEach((item) =>
+            item.addEventListener('mouseover', activeLink));
+    </script>
+
+<script>
+    const addBtns = document.querySelectorAll('.modal_add')  
+    const modal = document.querySelector('.js-modal')
+    const modalClose = document.querySelector('.js-modal-close')
+    const modalContainer = document.querySelector('.js-modal-container')
+    
+    function show_CRUD(){
+        modal.classList.add('open');
+    }
+
+    function hide_CRUD(){
+        modal.classList.remove('open');
+    }
+
+    for(const addBtn of addBtns){
+        addBtn.addEventListener('click', show_CRUD)
+    }
+
+    modalClose.addEventListener('click', hide_CRUD)
+
+    modal.addEventListener('click', hide_CRUD)
+
+    modalContainer.addEventListener('click', function(event){
+        event.stopPropagation()
+    })
+</script>
+
+<!-- DEL -->
+<script>
+    const delBtns = document.querySelectorAll('.modal_del')  
+    const modalDel = document.querySelector('.js-modal-del')
+    const modalCloseDel = document.querySelector('.js-modal-del-close')
+    const modalContainerDel = document.querySelector('.js-modal-del-container')
+
+    function show_CRUD(){
+        modalDel.classList.add('open');
+    }
+
+    function hide_CRUD(){
+        modalDel.classList.remove('open');
+    }
+
+    for(const delBtn of delBtns){
+        delBtn.addEventListener('click', show_CRUD)
+    }
+
+    modalCloseDel.addEventListener('click', hide_CRUD)
+
+    modalDel.addEventListener('click', hide_CRUD)
+
+    modalContainerDel.addEventListener('click', function(event){
+        event.stopPropagation()
+    })
+</script>
+
+<!-- UP -->
+<script>
+    const upBtns = document.querySelectorAll('.modal_update')  
+    const modalUp = document.querySelector('.js-modal-up')
+    const modalCloseUp = document.querySelector('.js-modal-up-close')
+    const modalContainerUp = document.querySelector('.js-modal-up-container')
+    
+    function show_CRUD(){
+        modalUp.classList.add('open');
+    }
+
+    function hide_CRUD(){
+        modalUp.classList.remove('open');
+    }
+
+    for(const upBtn of upBtns){
+        upBtn.addEventListener('click', show_CRUD)
+    }
+
+    modalCloseUp.addEventListener('click', hide_CRUD)
+
+    modalUp.addEventListener('click', hide_CRUD)
+
+    modalContainerUp.addEventListener('click', function(event){
+        event.stopPropagation()
+    })
+</script>
+
+</body>
+</html>
